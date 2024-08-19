@@ -1,0 +1,132 @@
+/* Make sure to add following extensions:
+ ****************************************
+ * 1. APC Customization UI++
+ * 2. Symbols Icon Theme
+ * 3. AbelFubu theme -> AbelFubu Contrast variant *Note: theme is only for syntax highlighting, ui colors are included in this file.
+ * 4. Make sure to change a few settings like font, font size to your liking.
+ ****************************************
+ */
+
+ {
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.sideBar.location": "right",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "symbols.hidesExplorerArrows": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.formatOnSave": false,
+    "editor.lineHeight": 1.8,
+    "editor.fontSize": 13,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "bottom",
+    "editor.minimap.autohide": true,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "workbench.statusBar.visible": true,
+    "editor.glyphMargin": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.overviewRulerBorder": false,
+    "workbench.editor.showTabs": "single",
+  
+    "editor.cursorSmoothCaretAnimation": "on",
+  
+    "apc.font.family": "JetBrains Mono Medium",
+    "apc.header": {
+      "height": 36
+    },
+    "apc.listRow": {
+      "height": 26
+    },
+    "apc.stylesheet": {
+      ".monaco-editor .find-widget>.find-part": { "align-items": "center" },
+      ".title-label > h2": "display: none",
+      ".editor-actions": "display:none",
+      ".pane-body": "padding: 8px",
+      ".pane-header": "padding: 0 8px",
+      ".nosidebar .inline-tabs-placeholder": "width: 75px",
+      ".split-view-view:first-child .pane-header": "display: none !important",
+      ".monaco-list-row": "border-radius:6px;",
+      ".monaco-list-row.selected, .monaco-list-row.focused": "box-shadow: inset 0 1px 0 #ffffff09 !important; outline:1px solid #00000020 !important;",
+      ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none",
+  
+      ".line-numbers": "width: 36px !important",
+      ".current-line-margin-both": "background-color: #ffffff12 !important; box-shadow: inset 0 1px 0 #ffffff09 !important; width: calc(100% - 16px) !important; left:12px !important; border-radius: 4px;",
+  
+      ".statusbar": "opacity: 0.4; transition: 0.3s ease-in-out",
+      ".statusbar:hover": "opacity: 1",
+  
+      ".quick-input-widget": "top: 50% !important; transform: translateY(-51%); backdrop-filter: blur(10px); border: 1px solid #ffffff12;",
+      ".quick-input-widget .monaco-inputbox": "height: 32px !important; border-radius: 8px; margin-bottom: 4px;",
+      ".quick-input-widget .monaco-list-rows": "background: transparent !important;",
+  
+      ".hover-widget": "backdrop-filter:blur(10px);",
+      ".tab": "border:1px solid transparent !important; transition: all 0.2s ease-in-out; border-radius: 8px !important;",
+      ".tab.active": " overflow:hidden; border: 1px solid #00000020 !important;  box-shadow: inset 0 1px 0 #ffffff09 !important",
+  
+      ".monaco-button": "border-radius: 4px; box-shadow: inset 0 1px 0 #ffffff09 !important;",
+  
+      ".notification-toast": "backdrop-filter:blur(10px); border: 1px solid #ffffff09 !important; border-radius: 8px !important; ",
+  
+      ".sidebar ul[role=tablist] .action-item": "width:40px;padding:0px !important; height:32px !important; display:flex !important; align-items:center; justify-content:center; border-radius:4px;",
+      ".sidebar ul[role=tablist] .action-item.checked": "background-color: #ffffff12 !important; box-shadow:inset 0 1px 0 #ffffff09 !important; border-radius:6px;outline:1px solid #00000020 !important;",
+      ".sidebar ul[role=tablist] .action-label:before": "left:auto !important;",
+      ".sidebar ul[role=tablist] .active-item-indicator": "display:none !important;",
+      ".sidebar ul[role=tablist]": "margin-left:16px !important; justify-content:space-between",
+  
+      ".basepanel .action-item": "border-radius:4px; height:24px;",
+      ".basepanel .action-item.checked": "background-color: #ffffff12 !important; box-shadow:inset 0 1px 0 #ffffff09 !important; border-radius:6px;outline:1px solid #00000020 !important;",
+      ".basepanel .active-item-indicator": "display:none !important;",
+  
+      ".find-widget": "border-radius:6px; backdrop-filter:blur(10px);",
+      ".monaco-inputbox, .scm-editor": "border-radius:6px !important;",
+      ".slider": "width: 6px !important; border-radius: 16px;",
+      ".monaco-button-dropdown": "border-radius:6px !important;",
+  
+      ".context-view.monaco-menu-container": "border: 1px solid #ffffff09 !important; border-radius: 8px !important;",
+      ".monaco-menu": "background:#212121bb !important; backdrop-filter:blur(10px) !important", // MUTED BACKGROUND
+      ".monaco-scrollable-element": "background-color:transparent !important",
+      ".suggest-widget": "border-radius:6px !important; backdrop-filter:blur(10px); overflow:hidden; box-shadow:0 0 10px #00000030;",
+      ".suggest-widget .monaco-row": "border-radius:0px !important;",
+      ".suggest-details": "backdrop-filter:blur(10px); border-radius:8px;",
+  
+      ".monaco-hover": "backdrop-filter:blur(10px); border-radius:8px !important;"
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+      "*.ts": "${capture}.js",
+      "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+      "*.jsx": "${capture}.js",
+      "*.tsx": "${capture}.ts ${capture}.*.tsx",
+      "tsconfig.json": "tsconfig.*.json",
+      "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+      "tailwind.config.*": "tailwind.config*, postcss.config*",
+      ".env": ".env*"
+    },
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "editor.matchBrackets": "never",
+  
+    //blurred background
+    "workbench.colorCustomizations": {
+      "menu.background": "#2e333b70", //context menu
+      "menu.selectionBackground": "#4247509a", //context menu hover
+      "editorWidget.background": "#51586320", //widget and tooltip
+      "quickInput.background": "#2e333b00", //command center drop down menu
+      "notifications.background": "#29303bd7" //Notification background color.
+    },
+    "window.menuBarVisibility": "compact",
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "animations.Enabled": true,
+    "animations.Install-Method": "Apc Customize UI++",
+    "apc.imports": [
+      "file:///c:/Users/angel/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "[lua]": {
+      "editor.defaultFormatter": "yinfei.luahelper"
+    }
+  }
+  
