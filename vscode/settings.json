@@ -122,7 +122,7 @@
     "animations.Enabled": true,
     "animations.Install-Method": "Apc Customize UI++",
     "apc.imports": [
-      "file:///c:/Users/angel/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+      "file:///$USERPROFILE$/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
     ],
     "security.workspace.trust.untrustedFiles": "open",
     "[lua]": {
