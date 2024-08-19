@@ -51,7 +51,7 @@ Copy the content from terminal/settings.json.
 ![vscode](./assets/vscode.png)
 
 ### Cider
-I use apple music and the apple music client in windows it's horrible. I recommend buy cider for $3.99 usd you got this. I use the [catppuccin](https://github.com/catppuccin/cider) theme.
+I use apple music and the apple music client in windows it's horrible. I recommend buy [client](https://cider.sh) for $3.99 usd you got this. I use the [catppuccin](https://github.com/catppuccin/cider) theme.
 
 ![cider](./assets/cider.png)
 
